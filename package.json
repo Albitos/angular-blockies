@@ -6,7 +6,8 @@
   "scripts": {
     "build": "rm -rf dist/ && ngc build -p ./tsconfig.json",
     "release": "npm run build && cp package.json dist/ && cd dist/ && npm publish && cd ..",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "install": "npm run build"
   },
   "repository": {
     "type": "git",
